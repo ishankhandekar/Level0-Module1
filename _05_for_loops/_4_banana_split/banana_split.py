@@ -15,7 +15,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
+canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF")
 canvas.grid()
 
 '''
@@ -23,7 +23,30 @@ Text Rendering Example:
                     x    y                                                       
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
+text1 = ""
+x = 0
+y = 0
 # Put your code below
-
+for i in range(4):
+     if i == 0:
+          text1 = "ice cream"
+          x = 100
+          y = 50
+     elif i == 1:
+          text1 = "ice cream"
+          x = 100
+          y = 30
+     elif i == 2:
+          text1 = "ice cream"
+          x = 100
+          y = 10
+     elif i == 3:
+          text1 = "banana"
+          x = 100
+          y = 70
+     canvas.create_text(x, y, text = text1, font=("Arial", 16))
+     
+          
+          
 
 root.mainloop()
